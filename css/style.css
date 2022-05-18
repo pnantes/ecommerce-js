@@ -1,0 +1,187 @@
+header{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 2px 30px -10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo{
+    width: 172px;
+    height: 50px;
+}
+
+nav{
+    display: flex;
+    margin-right: 90px;
+}
+
+.filtros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.liFiltros{
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+.liFiltros:hover{
+    text-decoration: underline;
+    color: #2E245E;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+main{
+    display:flex;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    margin-top: 50px;
+}
+
+ul{
+    list-style-type: none;
+    width: 65%;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardBox{
+    height: 380px;
+    width: 240px;
+    border: #F5F5F5 solid 2px;
+    margin: 0px 0px 15px 10px;
+    color: #292929;
+}
+
+.cardBox:hover{
+    border: #37268C solid 2px;
+}
+
+img{
+    height: 150px;
+    width: 240px;
+    background-color: #F5F5F5;
+}
+
+h4{
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    background-color: #2E245E;
+    height: 28px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 18px;
+}
+
+p{
+    font-size: 14px;
+}
+
+.preco{
+    color: #2E245E;
+    font-weight: 600;
+}
+
+.addCarrinho:hover{
+    text-decoration: underline;
+    color: #2E245E;
+}
+
+.inputPesq{
+    background-color: #F5F5F5;
+    color: #242424;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+    border: none;
+    width: 235px;
+    height: 52px;
+    padding: 10px;
+    margin-top: 17px;
+}
+
+.pesquisar{
+    background-color: #2E245E;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: white;
+    border: none;
+    width: 90px;
+    height: 52px;
+}
+
+h1{
+    font-size: 18px;
+    background-color: #37268C;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 50px;
+}
+
+.carrinho{
+    background-color: #F5F5F5;
+    width: 330px;
+    height: 450px;
+}
+
+.imgCar{
+    background-color: #FFFFFF;
+    width: 88px;
+    height: 92px;
+}
+
+.ulCarrinho{
+    padding: 8px;
+    width: 315px;
+    height: 200px;
+    overflow: auto;
+}
+
+.liCarrinho{
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.h2Carrinho{
+    font-size: 16px;
+}
+
+.caixa{
+    background-color: #292929;
+    width: 315px;
+    height: 90px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    display: block;
+}
+
+.sub-caixa{
+    display: flex;
+    justify-content: space-between;
+}
