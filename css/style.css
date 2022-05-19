@@ -49,6 +49,11 @@ ul{
     width: 65%;
 }
 
+#carrinho-vazio{
+    text-align: center;
+    
+}
+
 .cards{
     display: flex;
     flex-wrap: wrap;
@@ -183,7 +188,7 @@ h1{
     font-size: 24px;
     font-family: 'Inter', sans-serif;
     padding: 10px;
-    display: block;
+    display: none;
 }
 
 .sub-caixa{
