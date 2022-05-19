@@ -1,34 +1,138 @@
-<li class="liCarrinho">
-    <img class="imgCar" src="img\camiseta_preta.svg" alt="Camiseta Preta">
-    <h2 class="h2Carrinho">Camiseta Branca</h2>
-    <p>R$ 100.00</p>
-    <p class="removerProd">Remover produto</p>
-</li>
+<!DOCTYPE html>
+<html lang="pt - BR">
 
-<li class="liCarrinho">
-    <img class="imgCar" src="img\camiseta_preta.svg" alt="Camiseta Preta">
-    <h2 class="h2Carrinho">Touca</h2>
-    <p>R$ 40.00</p>
-    <p class="removerProd">Remover produto</p>
-</li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-<li class="liCarrinho">
-    <img class="imgCar" src="img\camiseta_preta.svg" alt="Camiseta Preta">
-    <h2 class="h2Carrinho">Jaqueta</h2>
-    <p>R$ 180.00</p>
-    <p class="removerProd">Remover produto</p>
-</li>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
 
-<li class="liCarrinho">
-    <img class="imgCar" src="img\camiseta_preta.svg" alt="Camiseta Preta">
-    <h2 class="h2Carrinho">Mascara</h2>
-    <p>R$ 30.00</p>
-    <p class="removerProd">Remover produto</p>
-</li>
+    <link rel="stylesheet" href="css\style.css">
+    <script defer src="\js\database.js"></script>
+    <script defer src="\js\index.js"></script>
+</head>
 
-<li class="liCarrinho">
-    <img class="imgCar" src="img\camiseta_preta.svg" alt="Camiseta Preta">
-    <h2 class="h2Carrinho">Moletom</h2>
-    <p>R$ 80.00</p>
-    <p class="removerProd">Remover produto</p>
-</li>
+<body>
+    <header>
+        <figure><img class="logo" src="img\logo.png" alt="Logo"></figure>
+
+        <nav>
+            <ul class="filtros">
+                <li class="liFiltros">Todos</li>
+                <li class="liFiltros">Acessórios</li>
+                <li class="liFiltros">Calçados</li>
+                <li class="liFiltros">Camisetas</li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <ul class="cards"></ul>
+
+
+        <aside>
+            <input type="text" class="inputPesq" placeholder="Digite aqui sua pesquisa">
+            <input type="button" class="pesquisar" value="Pesquisar">
+
+
+            <section class="carrinho">
+                <h1>Carrinho de compras</h1>
+                <ul class="ulCarrinho">
+                    <li class="liCarrinho">
+                        <div>
+                            <img class="imgCar" src="img\camiseta_preta.svg" alt="Camiseta Preta">
+                        </div>
+                        <div>
+                            <h2 class="h2Carrinho">Camiseta Preta</h2>
+                            <p>R$ 100.00</p>
+                            <p class="removerProd">Remover produto</p>
+                        </div>
+                    </li>
+
+                    <li class="liCarrinho">
+                        <div>
+                            <img class="imgCar" src="img\camiseta_branca.svg" alt="Camiseta Preta">
+                        </div>
+                        <div>
+                            <h2 class="h2Carrinho">Camiseta Branca</h2>
+                            <p>R$ 100.00</p>
+                            <p class="removerProd">Remover produto</p>
+                        </div>
+                    </li>
+
+                    <li class="liCarrinho">
+                        <div>
+                            <img class="imgCar" src="img\gorro.svg" alt="Camiseta Preta">
+                        </div>
+                        <div>
+                            <h2 class="h2Carrinho">Touca</h2>
+                            <p>R$ 40.00</p>
+                            <p class="removerProd">Remover produto</p>
+                        </div>
+                    </li>
+
+                    <li class="liCarrinho">
+                        <div>
+                            <img class="imgCar" src="img\jaqueta.svg" alt="Camiseta Preta">
+                        </div>
+                        <div>
+                            <h2 class="h2Carrinho">Jaqueta</h2>
+                            <p>R$ 180.00</p>
+                            <p class="removerProd">Remover produto</p>
+                        </div>
+                    </li>
+
+                    <li class="liCarrinho">
+                        <div>
+                            <img class="imgCar" src="img\mascara.svg" alt="Camiseta Preta">
+                        </div>
+                        <div>
+                            <h2 class="h2Carrinho">Mascara</h2>
+                            <p>R$ 30.00</p>
+                            <p class="removerProd">Remover produto</p>
+                        </div>
+                    </li>
+
+                    <li class="liCarrinho">
+                        <div>
+                            <img class="imgCar" src="img\moletom.svg" alt="Camiseta Preta">
+                        </div>
+                        <div>
+                            <h2 class="h2Carrinho">Moletom</h2>
+                            <p>R$ 80.00</p>
+                            <p class="removerProd">Remover produto</p>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="caixa">
+                    <div class="sub-caixa">
+                        <p>Quantidade:</p>
+                        <p>5</p>
+                    </div>
+                    <div class="sub-caixa">
+                        <p>Total:</p>
+                        <p>R$ 530,00</p>
+                    </div>
+                </div>
+
+            </section>
+        </aside>
+
+
+    </main>
+
+
+
+
+</body>
+
+</html>
