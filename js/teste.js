@@ -1,6 +1,23 @@
 
 const ulVitrine = document.querySelector(".cards")
 
+
+// function listaProdutos(listaProd){
+
+//   //PERCORRENDO ARRAY DE FUNCIONARIOS
+//   for(let i = 0; i < listaProd.length; i++){
+    
+//     const produto = listaProd[i]
+
+//     const cardProduto = criarCardVitrine(produto)
+
+//     // ulVitrine.appendChild(cardProduto)
+    
+//     console.log(produto)
+//   } 
+// }
+// listaProdutos(data)
+
 function criarCardVitrine(produto) {
   
   //for para a criação dos produtos
@@ -26,7 +43,7 @@ function criarCardVitrine(produto) {
     h4Categoria.innerHTML   = categoria
     h2Produto.innerHTML     = nomeItem
     pDescricao.innerHTML    = descricao
-    pValor.innerHTML        = `R$ ${valor}`
+    pValor.innerHTML        = valor
     pAddCarrinho.innerHTML  = addCarrinho
 
     ulVitrine.appendChild(liCard)
@@ -40,6 +57,8 @@ function criarCardVitrine(produto) {
     liCard.classList.add("cardBox")
     pValor.classList.add("preco")
     pAddCarrinho.classList.add("addCarrinho")
+    
+    // console.log(liCard)
 
   }
 }
